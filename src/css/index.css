@@ -153,3 +153,31 @@ span.resultado {
 .resumen h2 {
   margin:0 0 1rem 0;
 }
+
+span.resultado{
+    position: relative;
+    width:100%;
+}
+
+.resultado-enter{
+    transition:.5s;
+    transform: translateY(120%);
+}
+
+.resultado-enter.resultado-enter.resultado-enter-active{
+    transform: translateY(120%);
+}
+
+.resultado-exit{
+    transform: translateY(0);
+    transition: .5s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.resultado-exit-active{
+    opacity: 0;
+    transform: translateY(-100%);
+}
